@@ -81,6 +81,25 @@ function generate_resume() {
         document.write("</ol><hr><h2>References:</h2>");
 
         generate_bulleted_list(references);
+
+        var document_contents = document.body.innerHTML;
+        var url = window.location.href + "email";
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/json");
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                //update document with status of email POST request
+               // document.getElementById("demo").innerHTML=xhr.status + " " + xhr.responseText
+               console.log(xhr.status)
+            }
+        }
+
+        var data = `{"email": "${email}", "resume": "${document_contents}" }`
+            
+        xhr.send(data)
     }
 }
 
