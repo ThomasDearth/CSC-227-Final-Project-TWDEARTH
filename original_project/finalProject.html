@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WEB-115 Final Project</title>
+        <link href="finalProject.css", rel="stylesheet", type="text/css">
+    </head>
+
+    <body>
+        <!--The landing page-->
+        <div id="landing">
+            <fieldset class="banner">
+                <h1 class="banner">Build Your Resume</h1>
+                <p class="banner">By Thomas Dearth</p>
+                <p class="banner">WEB-115 Section 0002</p>
+            </fieldset>
+
+            <br>
+            <div class="form">
+                <p>In the large text boxes, press enter to create a new bullet point.</p>
+                <table>
+                    <tr>
+                        <td><fieldset class="form_half_a">
+                            <p>About You</p>
+                            <hr>
+                            <table>
+                                <tr>
+                                    <td><label for="form_name">Your name: </label></td>
+                                    <td><input type="text" id="form_name"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_city">City: </label></td>
+                                    <td><input type="text" id="form_city"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_state">State: </label></td>
+                                    <td><input type="text" id="form_state"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_zipcode"></label>Zip code: </td>
+                                    <td><input type="text" id="form_zipcode"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_phone_num">Phone number: </label></td>
+                                    <td><input type="text" id="form_phone_num"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_email"></label>Email address: </td>
+                                    <td><input type="text" id="form_email"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_linkedin"></label>LinkedIn: </td>
+                                    <td><input type="text" id="form_linkedin"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_website">Personal website: </label></td>
+                                    <td><input type="text" id="form_website"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_portfolio_link">Portfolio link: </label></td>
+                                    <td><input type="text" id="form_portfolio_link"></td>
+                                </tr>
+                            </table>
+                        </fieldset></td>
+                        <td><fieldset class="form_half_a">
+                            <p>Your Skills</p>
+                            <hr>
+                            <table>
+                                <tr>
+                                    <td><label for="form_job_skills">Job skills:</label></td>
+                                    <td><textarea id="form_job_skills"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_writing_skills">Writing skills:</label></td>
+                                    <td><textarea id="form_writing_skills"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_work_ethic">Work ethic:</label></td>
+                                    <td><textarea id="form_work_ethic"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_technical_skills">Technical skills:</label></td>
+                                    <td><textarea id="form_technical_skills"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="form_languages">Programming Languages:</label></td>
+                                    <td><textarea id="form_languages"></textarea></td>
+                                </tr>
+                            </table>
+                        </fieldset></td>
+                    </tr>
+                </table>
+                <fieldset class="form_full_width">
+                        <label for="form_education">Educational Background</label>
+                        <hr>
+                        <textarea id="form_education"></textarea>
+                    </fieldset>
+                <fieldset class="form_full_width">
+                    <p>Employment Experience</p>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><label for="form_date_1">Previous Employment 1 Start:</label></td>
+                            <td><input type="date" id="form_date_1"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_date_1_fin">Previous Employment 1 End:</label></td>
+                            <td><input type="date" id="form_date_1_fin"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_work_loc_1">Employment 1 Location:</label></td>
+                            <td><input type="text" id="form_work_loc_1"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_date_2">Previous Employment 2 Start:</label></td>
+                            <td><input type="date" id="form_date_2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_date_2_fin">Previous Employment 2 End:</label></td>
+                            <td><input type="date" id="form_date_2_fin"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_work_loc_2">Employment 2 Location:</label></td>
+                            <td><input type="text" id="form_work_loc_2"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_date_3">Previous Employment 3 Start:</label></td>
+                            <td><input type="date" id="form_date_3"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_date_3_fin">Previous Employment 3 End:</label></td>
+                            <td><input type="date" id="form_date_3_fin"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="form_work_loc_3">Employment 3 Location:</label></td>
+                            <td><input type="text" id="form_work_loc_3"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset class="form_full_width">
+                    <label for="form_references">Business References:</label>
+                    <hr>
+                    <textarea id="form_references"></textarea>
+                </fieldset>
+            </div>
+            <button id="button_submit">Generate Resume</button>
+        </div>
+
+        <script src="projectJS.js"></script>
+    </body>
+</html>

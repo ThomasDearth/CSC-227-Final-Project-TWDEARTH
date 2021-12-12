@@ -1,0 +1,38 @@
+.banner {
+    background-color: gray;
+    border-width: 10px;
+    border-color: black;
+    text-align: center;
+    width: 850px;
+}
+
+.form {
+    border-width: 10px;
+}
+
+.form_half_a {
+    width: 400px;
+    height: 350px;
+}
+
+.form_half_a textarea {
+    width: 270px;
+}
+
+.form_half_b {
+    width: 400px;
+    height: 150px;
+}
+
+.form_half_b textarea {
+    width: 370px;
+    height: 100px;
+}
+
+.form_full_width {
+    width: 839px;
+}
+
+.form_full_width textarea {
+    width: 800px;
+}
